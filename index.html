@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Tab Generator</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Canvas Tab Generator</h1>
+    <form id="tab-form">
+        <div class="instructions">Tab titles must be under 20 characters to fit on all screen resolutions.</div>
+        <div class="tab-inputs">
+            <div class="tab-input">
+                <h4>Tab 1</h4>
+                <label for="tab1-title">Title</label>
+                <input id="tab1-title" placeholder="Title" maxlength="20" />
+                <label for="tab1-html">HTML</label>
+                <textarea id="tab1-html"></textarea>
+            </div>
+            <div class="tab-input">
+                <h4>Tab 2</h4>
+                <label for="tab2-title">Title</label>
+                <input id="tab2-title" placeholder="Title" maxlength="20" />
+                <label for="tab2-html">HTML</label>
+                <textarea id="tab2-html"></textarea>
+            </div>
+            <div class="tab-input">
+                <h4>Tab 3</h4>
+                <label for="tab3-title">Title</label>
+                <input id="tab3-title" placeholder="Title" maxlength="20" />
+                <label for="tab3-html">HTML</label>
+                <textarea id="tab3-html"></textarea>
+            </div>
+            <div class="tab-input">
+                <h4>Tab 4</h4>
+                <label for="tab4-title">Title</label>
+                <input id="tab4-title" placeholder="Title" maxlength="20" />
+                <label for="tab4-html">HTML</label>
+                <textarea id="tab4-html"></textarea>
+            </div>
+            <div class="tab-input">
+                <h4>Tab 5</h4>
+                <label for="tab5-title">Title</label>
+                <input id="tab5-title" placeholder="Title" maxlength="20" />
+                <label for="tab5-html">HTML</label>
+                <textarea id="tab5-html"></textarea>
+            </div>
+        </div>
+
+
+        <div class="button-wrapper">
+            <button>Generate</button>
+        </div>
+    </form>
+    <div class="result-wrapper">
+        <label for="result">Result</label>
+        <div class="instructions">After you click "Generate", copy this into your Canvas editor.</div>
+        <textarea id="result" readonly></textarea>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.instructions {
+    font-size: 0.8em;
+}
+
+.tab-inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-inputs label {
+    margin-top: 0.5em;
+    display: block;
+}
+
+#tab-form {
+    margin: 0.5em;
+}
+
+.tab-input {
+    margin-right: 0.5em;
+}
+
+/* Result box */
+
+.result-wrapper {
+    margin-top: 2em;
+    padding: 0.5em;
+}
+
+.result-wrapper textarea {
+    width: 100%;
+    height: 30em;
+
+}
