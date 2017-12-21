@@ -13,7 +13,8 @@ body {
 
 .tab-inputs label {
     margin-top: 0.5em;
-    display: none;
+    display: block;
+    visibility: hidden;
 }
 
 #tab-form {
@@ -22,8 +23,6 @@ body {
 
 .tab-input {
     margin-right: 0.5em;
-    display: block;
-    visibility: hidden;
 }
 
 /* Result box */
