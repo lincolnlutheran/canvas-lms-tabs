@@ -6,51 +6,54 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <img src="canvas-tab-example400x355.png" align="right" />
     <h1>Canvas Tab Generator</h1>
-    <div class="intro">
-        <ol>
-            <li>Create your tabs as separate content pages in Canvas. When you are finished, click HTML Editor,
-                copy your page, and paste the content in the corresponding tab below.</li>
-            <li>Name each tab below with a short, descriptive title. Titles over 20 characters may not fit all 
-                browsers.</li>
-            <li>Click the 'generate' button below, copy the new HTML, create a new content page in Canvas, 
-                click on HTML Editor and poste in this HTML. You can edit the resulting content page, but if 
-                the HTML gets messed up, you will have to repeat this process.</li>
-        </ol>
+    <div class="instructions">
+      <ol>
+        <li>Name each tab below with a short, descriptive title. Titles over 20 characters may not fit all 
+            screen resolutions and are not allowed. You do not have to use all 5 tabs. Any tabs that you do
+            not use will not appear on the page.</li>
+        <li>Create each of your tabs as separate content pages in Canvas. When you are finished, click HTML Editor,
+            copy your page, and paste the content in the corresponding tab below. Repeat for each tab/page.</li>
+        <li>Click the 'generate' button below, copy the new HTML from the results section at the bottom of 
+            the page, create a new content page in Canvas, click on HTML Editor and poste in this HTML. You can 
+            edit the resulting content page, but if the HTML gets messed up, you will have to repeat this process.</li>
+      </ol>
     </div>
+    
     <form id="tab-form">
-        <div class="instructions">Tab titles must be under 20 characters to fit on all screen resolutions.</div>
-        <div class="tab-inputs">
+        <div class="tab-inputs"> 
             <div class="tab-input">
-                <input id="tab1-title" placeholder="Type tab 1 title here." maxlength="20" />
-                <textarea id="tab1-html" placeholder="Paste tab 1 HTML here."></textarea>
+              <div class="numbers">1</div>
+              <div class="numbers">2</div>
             </div>
             <div class="tab-input">
-                <input id="tab2-title" placeholder="Type tab 2 title here." maxlength="20" />
-                <textarea id="tab2-html" placeholder="Paste tab 2 HTML here."></textarea>
+                <input class="tab-input" id="tab1-title" placeholder="Type tab 1 title here." maxlength="20" />
+                <textarea class="tab-input" id="tab1-html" placeholder="Paste tab 1 HTML here."></textarea>
             </div>
             <div class="tab-input">
-                <input id="tab3-title" placeholder="Type tab 3 title here." maxlength="20" />
-                 <textarea id="tab3-html" placeholder="Paste tab 3 HTML here."></textarea>
+                <input class="tab-input" id="tab2-title" placeholder="Type tab 2 title here." maxlength="20" />
+                <textarea class="tab-input" id="tab2-html" placeholder="Paste tab 2 HTML here."></textarea>
             </div>
             <div class="tab-input">
-                <input id="tab4-title" placeholder="Type tab 4 title here." maxlength="20" />
-                <textarea id="tab4-html" placeholder="Paste tab 4 HTML here."></textarea>
+                <input class="tab-input" id="tab3-title" placeholder="Type tab 3 title here." maxlength="20" />
+                 <textarea class="tab-input" id="tab3-html" placeholder="Paste tab 3 HTML here."></textarea>
             </div>
             <div class="tab-input">
-                <input id="tab5-title" placeholder="Type tab 5 title here." maxlength="20" />
-                <textarea id="tab5-html" placeholder="Paste tab 5 HTML here."></textarea>
+                <input class="tab-input" class="tab-input" id="tab4-title" placeholder="Type tab 4 title here." maxlength="20" />
+                <textarea class="tab-input" id="tab4-html" placeholder="Paste tab 4 HTML here."></textarea>
+            </div>
+            <div class="tab-input">
+                <input class="tab-input" id="tab5-title" placeholder="Type tab 5 title here." maxlength="20" />
+                <textarea class="tab-input" id="tab5-html" placeholder="Paste tab 5 HTML here."></textarea>
             </div>
         </div>
 
-
         <div class="button-wrapper">
-            <button>Generate</button>
+             <span class="numbers">3</span><button>Generate</button>
         </div>
     </form>
     <div class="result-wrapper">
-        <label for="result">Result</label>
-        <div class="instructions">After you click "Generate", copy this into your Canvas editor.</div>
         <textarea id="result" readonly></textarea>
     </div>
 </body>
