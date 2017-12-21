@@ -13,7 +13,7 @@ body {
 
 .tab-inputs label {
     margin-top: 0.5em;
-    display: block;
+    display: none;
 }
 
 #tab-form {
