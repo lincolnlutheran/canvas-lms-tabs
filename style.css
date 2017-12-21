@@ -22,6 +22,8 @@ body {
 
 .tab-input {
     margin-right: 0.5em;
+    display: block;
+    visibility: hidden;
 }
 
 /* Result box */
