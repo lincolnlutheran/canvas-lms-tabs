@@ -1,5 +1,5 @@
 var html = '<div class="enhanceable_content tabs">\
-<ul tabindex=2>\
+<ul>\
   <li><a href="#fragment-1">PUT TITLE FOR TAB HERE</a></li>\
   <li><a href="#fragment-2">PUT TITLE FOR TAB HERE</a></li>\
   <li><a href="#fragment-3">PUT TITLE FOR TAB HERE</a></li>\
