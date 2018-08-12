@@ -1,5 +1,5 @@
 var html = '<div class="enhanceable_content tabs">\
-<ul>\
+<ul tabindex=2>\
   <li><a href="#fragment-1">PUT TITLE FOR TAB HERE</a></li>\
   <li><a href="#fragment-2">PUT TITLE FOR TAB HERE</a></li>\
   <li><a href="#fragment-3">PUT TITLE FOR TAB HERE</a></li>\
@@ -40,7 +40,7 @@ var generateHTML = function() {
     output += '<div class="enhanceable_content tabs">\n';
     output += '<ul>\n';
     for (i = 0; i < content.length; i++) {
-        output += '<li><a href="#fragment-' + (i + 1) + '" tabindex='+ (i + 1) + ' >';
+        output += '<li><a href="#fragment-' + (i + 1) + '">';
         output += content[i].title;
         output += '</a></li>\n';
     }
