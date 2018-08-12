@@ -40,7 +40,7 @@ var generateHTML = function() {
     output += '<div class="enhanceable_content tabs">\n';
     output += '<ul>\n';
     for (i = 0; i < content.length; i++) {
-        output += '<li><a href="#fragment-' + (i + 1) + '">';
+        output += '<li><a href="#fragment-' + (i + 1) + '" tabindex='+ (i + 1) + ' >';
         output += content[i].title;
         output += '</a></li>\n';
     }
